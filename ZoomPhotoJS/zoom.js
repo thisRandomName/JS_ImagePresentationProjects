@@ -29,7 +29,7 @@ function zoomPicture(photoID,zoomID){
     //define the zoom in the zoom-div element:
     zoom.style.backgroundSize= (cx*photo.width)+"px "+(cy*photo.height)+"px";
 
-    //execute a function when someone moves the cursor over the ohoto or the lens:
+    //execute a function when someone moves the cursor over the photo or the lens:
     lens.addEventListener("mousemove", moveLens);
     photo.addEventListener("mousemove", moveLens);
 
@@ -68,7 +68,7 @@ function zoomPicture(photoID,zoomID){
             y=photo.height-lens.offsetHeight;
         }
 
-        //set the position of the lens on the screen acoording to its movement:
+        //set the position of the lens on the screen according to its movement:
         lens.style.left=x+"px";
         lens.style.top=y+"px";
        
@@ -76,7 +76,7 @@ function zoomPicture(photoID,zoomID){
 
         //display what the lens sees : the zoom is displayed in the zoom-div element
         //WOW!!!!!!: we use negative pixels to expand OUTSIDE the original fixed size of the image 
-        //because we want to enlarge it in order to have thw zoom effect
+        //because we want to enlarge it in order to have the zoom effect
         zoom.style.backgroundPosition="-"+ (x*cx)+"px -"+(y*cy) +"px";
 
     }
