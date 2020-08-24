@@ -82,7 +82,7 @@ function zoomPicture(photoID,zoomID){
     }
 
     //function to get the cursor position
-    // !!pageX property returns the horizontal coordinate (with regard to the document=web page) of the mouse pointer 
+    // !!pageX property returns the horizontal coordinate (relative to the document=web page) of the mouse pointer 
     //when a mouse event was triggered.
     // !!getBoundingClientRect() method returns the size of an element and its position relative to the viewport.
     //This method returns a DOMRect object with eight properties: left, top, right, bottom, x, y, width, height.
