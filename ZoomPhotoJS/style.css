@@ -1,0 +1,33 @@
+#photoId{
+    width:150px;
+    height:200px;
+}
+
+
+
+.zoom-lens{
+    position: absolute;
+    width:50px;
+    height:50px;
+    border: 1px solid blue;
+}
+
+.zoom-photo{
+    width:300px;
+    height:350px;
+    border:1px solid blue;
+}
+
+.container{
+    position: relative;
+    margin-top:50px;
+    margin-left:500px;
+
+}
+
+body{
+    background-color: black;
+}
+
+
+

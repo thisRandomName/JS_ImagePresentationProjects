@@ -1,0 +1,137 @@
+.container{
+	max-width: 1000px;
+	position: relative;
+	margin:auto;
+}
+
+.slides{
+/*hide photos by default */
+display:none;
+}
+
+/* W3.CSS provides the following classes for animations:
+w3-animate-top: Slides in an element from the top 
+w3-animate-bottom:Slides in an element from the bottom
+w3-animate-left:Slides in an element from the left
+w3-animate-right:Slides in an element from the right
+w3-animate-opacity:Animates an element's opacity from 0 to 1 in 1.5 seconds
+w3-animate-zoom:Animates an element from 0 to 100% in size
+w3-animate-fading :Animates an element's opacity from 0 to 1 and 1 to 0 (fades in + fade out)
+w3-spin:Spins an element 360 degrees */
+
+/* A @-webkit-keyframes block contains rule sets called keyframes. 
+A keyframe defines the style that will be applied for that moment within the animation. 
+The animation engine will smoothly interpolate style between the keyframes */
+
+
+
+.fade{
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 0.5s;
+	animation-name: fade;
+	animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+  }
+  
+ @keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+  }
+
+
+
+  /* CSS transitions allows you to change property values smoothly, over a given duration. */
+  
+  /* Transitions:transition,transition-delay,transition-duration,transition-property,transition-timing-function */
+  
+  /* transition property is shorthand for the other four: tansition-property transition-duration transition-timing-function transition-delay*/
+ 
+
+  .dot{
+	cursor: pointer;  
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color:wheat;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.5s ease; 
+  }
+
+  .active, .dot:hover {
+	background-color: rgb(61, 59, 59);
+  }
+
+
+  .number {
+	color:wheat;
+	font-size: 20px;
+	position: relative;
+	text-align: left;
+  }
+
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color:wheat;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 1s ease;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 450px;
+	border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a darker color  */
+.prev:hover, .next:hover {
+	background-color:rgb(46, 45, 45);
+  }
+  
+
+
+  .text {
+	color:rgb(46, 45, 45);
+	font-size: 30px;
+	padding: 8px 12px;
+	position:absolute;
+	bottom: 8px;
+	width: 55%;
+	text-align: center;
+	font-weight: bold;
+	
+  }
+
+  .alldots{
+	  text-align: center;
+	  width:69%
+  }
+
+
+  body{
+	  background-color: black;
+
+  }
+
+
+  .photo{
+	  width: 550px;
+	  height:550px;
+	  position: relative;
+  }
+
+  

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Slider</title>
+    <link rel="stylesheet" href="style.css">
+     <!-- font-awesome
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/> -->
+
+</head>
+<body>
+    
+  <div class="container">
+      <div class="slides fade">
+          <div class="number">1/4</div>
+          <img src="images/park.jpg" class="photo" >
+          <div class="text">Park</div>
+       </div>
+       <div class="slides fade">
+          <div class="number">2/4</div>
+          <img src="images/trees.jpg" class="photo" >
+          <div class="text">Trees</div>
+        </div>
+        <div class="slides fade">
+            <div class="number">3/4</div>
+            <img src="images/felSenior.jpg" class="photo">
+            <div class="text">Boxer</div>
+        </div>
+        <div class="slides fade">
+            <div class="number">4/4</div>
+            <img src="images/felJunior.jpg" class="photo">
+            <div class="text">Greek sepherd</div>
+         </div>
+
+         <!-- buttons as hyperlinks with their unicode decimal code -->
+         <a class="prev" onclick="slideShow(-1)">&#10094;</a>
+         <a class="next" onclick="slideShow(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- the dots underneath -->
+  <!-- The <span> tag is easily styled by CSS or manipulated with JSc using the class or id attribute.
+       The <span> tag is much like the <div> element, but <div> is a block-level element and <span> is an inline element.
+       A block-level element always starts on a new line and takes up the full width available.
+       An inline element does not start on a new line and it only takes up as much width as necessary.  
+   -->
+  <div class="alldots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+
+
+           
+     
+    <script src="photo_slider.js"></script>
+</body>
+</html>
