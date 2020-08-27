@@ -34,7 +34,7 @@ function showSlides(n){
 	}
 
 	for(let i=0;i<dots.length;i++){
-		//blank + className !!!!!!
+		//blank + activate !!!!!!
 		dots[i].className=dots[i].className.replace(" active","");
 	}
      // activate the n-th slide:
